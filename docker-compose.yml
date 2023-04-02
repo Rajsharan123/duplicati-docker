@@ -12,7 +12,7 @@ services:
     volumes:
       - /mnt/sharedata/duplicati/appdata/config:/config
       - /mnt/sharedata/backups:/backups
-      - /duplicati/source:/source
+      - ./:/source
     ports:
       - 8200:8200
     restart: unless-stopped
